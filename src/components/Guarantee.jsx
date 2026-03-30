@@ -5,35 +5,43 @@ import { SiAuth0 } from 'react-icons/si';
 
 const Guarantee = () => {
   return (
-    <section className=' bg-[#F2F5FF] '>
-      <div className=' flex justify-between items-center mx-10 '>
-        <div className='flex space-x-1 mt-5 mb-5'>
-        <FaShippingFast className='w-[35px] h-[35px]'/>
-        <div className='text-sm'>
-          <p className='font-semibold'>Free Delivery</p>
-          <span>Your Dream Furniture, Delivered Free.</span>
+    <section className='bg-[#F2F5FF] py-10 px-6'>
+      <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8'>
+        
+        
+        <div className='flex items-center space-x-4 justify-center md:justify-start'>
+          <div className="bg-white p-3 rounded-full shadow-sm">
+            <FaShippingFast className='w-[28px] h-[28px] text-[#054C73]'/>
+          </div>
+          <div className='text-sm'>
+            <p className='font-bold text-[#054C73]'>Free Delivery</p>
+            <span className="text-gray-600">Your Dream Furniture, Delivered Free.</span>
+          </div>
         </div>
-      </div>
 
-      <div className='flex space-x-1 mt-5 mb-5'>
-        <Ri24HoursFill className='w-[35px] h-[35px]'/>
-        <div className='text-sm'>
-          <p className='font-semibold'>Suport 24/7</p>
-          <span>Anytime You Need Us, We're Just a Message Away</span>
+       
+        <div className='flex items-center space-x-4 justify-center md:justify-start'>
+          <div className="bg-white p-3 rounded-full shadow-sm">
+            <Ri24HoursFill className='w-[28px] h-[28px] text-[#054C73]'/>
+          </div>
+          <div className='text-sm'>
+            <p className='font-bold text-[#054C73]'>Support 24/7</p>
+            <span className="text-gray-600">We're just a message away.</span>
+          </div>
         </div>
-      </div>
 
-      <div className='flex space-x-1 mt-5 mb-5'>
-        <SiAuth0 className='w-[35px] h-[35px]'/>
-        <div className='text-sm'>
-          <p className='font-semibold'>100% Authentic</p>
-          <span>Guaranteed 100% Authentic Craftsmanship</span>
+        
+        <div className='flex items-center space-x-4 justify-center md:justify-start'>
+          <div className="bg-white p-3 rounded-full shadow-sm">
+            <SiAuth0 className='w-[28px] h-[28px] text-[#054C73]'/>
+          </div>
+          <div className='text-sm'>
+            <p className='font-bold text-[#054C73]'>100% Authentic</p>
+            <span className="text-gray-600">Guaranteed premium craftsmanship.</span>
+          </div>
         </div>
-      </div>
 
       </div>
-      
-      
     </section>
   )
 }

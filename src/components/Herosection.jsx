@@ -5,18 +5,17 @@ import { Link } from "react-router-dom";
 const Herosection = () => {
   return (
     <section className="relative min-h-[80vh] md:h-[90vh] flex items-center justify-center md:justify-end">
-      {/* Background Image */}
+      
       <div className="absolute inset-0 z-0">
         <img 
           className="h-full w-full object-cover" 
           src={Herobg} 
           alt="Hero Luxury Furniture" 
         />
-        {/* Dark overlay for better text readability on mobile */}
+        
         <div className="absolute inset-0 bg-black/20 md:bg-transparent"></div>
       </div>
 
-      {/* Content Box */}
       <div className="relative z-10 w-[90%] md:w-[40%] lg:w-[35%] bg-[#DFE9F4]/95 md:bg-[#DFE9F4] p-6 md:px-8 md:py-10 md:mr-12 shadow-2xl rounded-xl md:rounded-md space-y-4 md:space-y-6 transform transition-all">
         
         <span className="text-[#054C73] font-semibold uppercase tracking-[0.2em] text-xs md:text-sm">
