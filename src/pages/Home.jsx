@@ -8,9 +8,9 @@ import Hiwsection from '../components/Hiwsection';
 import Herosection from '../components/Herosection'
 import Spinner from '../components/Spinner';
 import Lookroom from '../components/Lookroom';
-import Footer from '../Components/Footer';
-import Ourgallery from '../Components/Ourgallery';
-import Navbar from '../Components/Navbar';
+import Footer from '../components/Footer';
+import Ourgallery from '../components/Ourgallery';
+import Navbar from '../components/Navbar';
 
 
 
