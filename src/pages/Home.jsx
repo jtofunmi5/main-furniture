@@ -32,7 +32,7 @@ const Home = () => {
       <Suspense fallback={<Spinner/>}>
         <Hiwsection/>
       </Suspense>
-    <Lookroom/>
+      <Lookroom/>
       <Footer />
       
       
