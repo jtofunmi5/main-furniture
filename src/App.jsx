@@ -18,7 +18,8 @@ import VendorDashboard from "./pages/VendorDashboard";
 import VendorProducts from "./pages/VendorProduct";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
-import Gallery from "./pages/Gallery";
+
+import GalleryPage from "./pages/GalleryPage";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
         <Route path="/cart" element={<Carts />} />
         <Route path="/checkout" element={<Checkouts />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/vendor-dashboard" element={<VendorDashboard />} />

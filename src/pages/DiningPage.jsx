@@ -1,7 +1,7 @@
 import React from 'react'
-import Dining from '../components/Dining'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Dining from './components/Dining';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const DiningPage = () => {
   return (
@@ -13,4 +13,4 @@ const DiningPage = () => {
   )
 }
 
-export default DiningPage
+export default DiningPage;
