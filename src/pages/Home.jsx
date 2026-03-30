@@ -1,14 +1,17 @@
 import React, { lazy, Suspense } from 'react'
-import Navbar from '../components/Navbar';
-import HeroSection from '../components/HeroSection';
+
+
 import Guarantee from '../components/Guarantee';
 import InspiCollection from '../components/InspiCollection';
 import Bys from '../components/Bys'
 import Hiwsection from '../components/HiwSection';
-import OurGallery from '../components/OurGallery';
+import Herosection from '../components/Herosection'
 import Spinner from '../components/Spinner';
 import Lookroom from '../components/Lookroom';
-import Footer from '../components/Footer';
+import Footer from '../Components/Footer';
+import Ourgallery from '../Components/Ourgallery';
+import Navbar from '../Components/Navbar';
+
 
 
 // const InspiCollection = () => lazy(() => import ('../Components/InspiCollection'));
@@ -18,19 +21,19 @@ const Home = () => {
   return (
     <div>
       <Navbar/>
-      <HeroSection/>
+      <Herosection />
       <Guarantee/>
       <Suspense fallback={<Spinner/>}>
         <InspiCollection/>
       </Suspense>
       
       <Bys/>
-      <OurGallery/>
+      <Ourgallery/>
       <Suspense fallback={<Spinner/>}>
         <Hiwsection/>
       </Suspense>
     <Lookroom/>
-      <Footer/>
+      <Footer />
       
       
     </div>
