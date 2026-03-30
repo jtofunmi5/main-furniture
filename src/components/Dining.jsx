@@ -50,7 +50,7 @@ const Dining = () => {
             </ul>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-lg">
-             <img src="/images/dining/dining-detail.jpg" alt="Dining Detail" className="w-full h-full object-cover" />
+             <img src="/images/livingRoom/sofa.jpg" alt="Dining Detail" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
