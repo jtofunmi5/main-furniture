@@ -14,6 +14,6 @@ const Gallery = () => {
     <Footer/>
     </>
   )
-}
+};
 
 export default Gallery;

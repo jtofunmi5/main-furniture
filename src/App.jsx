@@ -10,7 +10,7 @@ import Details from "./pages/Details";
 import Carts from "./pages/Carts";
 import Checkouts from "./pages/Checkouts";
 import CartSidebar from "./components/CartSidebar";
-import Gallery from "./pages/gallery";
+import Gallery from "./pages/Gallery";
 import Services from "./pages/Services";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
