@@ -4,7 +4,7 @@ import React, { lazy, Suspense } from 'react'
 import Guarantee from '../components/Guarantee';
 import InspiCollection from '../components/InspiCollection';
 import Bys from '../components/Bys'
-import Hiwsection from '../components/HiwSection';
+import Hiwsection from '../components/Hiwsection';
 import Herosection from '../components/Herosection'
 import Spinner from '../components/Spinner';
 import Lookroom from '../components/Lookroom';

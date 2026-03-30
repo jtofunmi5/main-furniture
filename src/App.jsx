@@ -10,7 +10,7 @@ import Details from "./pages/Details";
 import Carts from "./pages/Carts";
 import Checkouts from "./pages/Checkouts";
 import CartSidebar from "./components/CartSidebar";
-import Gallery from "./pages/Gallery";
+
 import Services from "./pages/Services";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
@@ -18,6 +18,7 @@ import VendorDashboard from "./pages/VendorDashboard";
 import VendorProducts from "./pages/VendorProduct";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import Gallery from "./pages/gallery";
 
 function App() {
   return (
