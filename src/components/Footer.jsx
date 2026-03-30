@@ -1,65 +1,65 @@
-
-import { FaXTwitter, FaLinkedinIn, FaInstagram, FaFacebookF,} from 'react-icons/fa6';
+import { FaXTwitter, FaLinkedinIn, FaInstagram, FaFacebookF } from 'react-icons/fa6';
 import { RxDoubleArrowUp } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-  <footer className="bg-[#03344F] text-white py-12 ">
-      <div className="max-w-7xl max-auto px-4 md:px-8 md:grid-cols-3 grid gap-12 ">
-        <div className="pl-[50px]">
-          <h2 className="text-[#ffffff] text-xl font-bold  mb-4 ">SHINE LUXURY FURNITURE</h2>
-          <p className="text-sm text-gray-100 mb-7 ">
-            
-            At Shine Luxury Furniture, beauty goes beyond the surface. We're here to help you feel confident, radiant, and empowered every day.
-        Have questions or want to share your glow-up journey?
-        Connect with us on social media for tips, tutorials, and exclusive updates.
+    <footer className="bg-[#03344F] text-white pt-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+        
+        {/* Brand Section */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <h2 className="text-white text-xl font-bold mb-4 tracking-tight">
+            SHINE LUXURY FURNITURE
+          </h2>
+          <p className="text-sm text-gray-200 mb-6 leading-relaxed">
+            At Shine Luxury Furniture, beauty goes beyond the surface. We're here to help you feel confident, radiant, and empowered every day. Connect with us on social media for exclusive updates.
           </p>
-          <div className="flex gap-4 mb-7 text-white">
-            <FaXTwitter className="hover:text-[#ffffff] cursor-pointer" />
-            <FaLinkedinIn className="hover:text-[#ffffff] cursor-pointer" />
-            <FaInstagram className="hover:text-[#ffffff] cursor-pointer" />
-            <FaFacebookF className="hover:text-[#ffffff] cursor-pointer" />
+          <div className="flex gap-5 mb-6 text-xl">
+            <FaXTwitter className="hover:text-gray-400 transition-colors cursor-pointer" />
+            <FaLinkedinIn className="hover:text-gray-400 transition-colors cursor-pointer" />
+            <FaInstagram className="hover:text-gray-400 transition-colors cursor-pointer" />
+            <FaFacebookF className="hover:text-gray-400 transition-colors cursor-pointer" />
           </div>
-          <Link to="/">
-          <button className="flex items-center gap-2 mt-4 px-4 py-2 border border-white text-sm hover:bg-white hover:text-[#0E3A35] transition-all duration-500">
-              <RxDoubleArrowUp /> BACK TO TOP
-          </button>
-          </Link>
           
+          <button 
+            onClick={scrollToTop}
+            className="flex items-center gap-2 px-5 py-2 border border-white text-xs font-semibold uppercase tracking-widest hover:bg-white hover:text-[#03344F] transition-all duration-300 rounded-sm"
+          >
+            <RxDoubleArrowUp />
+          </button>
         </div>
 
-        <div className="pl-[96px] ">
-          <h4 className="text-white font-semibold  mb-2">Site Map</h4>
-          <ul className="space-y-1 text-sm text-gray-300">
-           <Link to="services" >
-            <li  className="hover:text-[#ffffff] cursor-pointer">Services</li>
-            </Link>
-            <Link to="gallery">
-            <li  className="hover:text-[#ffffff] cursor-pointer">Gallery</li>
-            </Link>
-             <Link to="cart" >
-            <li  className="hover:text-[#ffffff] cursor-pointer">Cart</li>
-            </Link>
-             <Link to="contact" >
-            <li  className="hover:text-[#ffffff] cursor-pointer">Contact us</li>
-            </Link>
+    
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <h4 className="text-white font-bold mb-4 uppercase text-sm tracking-wider">Site Map</h4>
+          <ul className="space-y-3 text-sm text-gray-300">
+            <li><Link to="/services" className="hover:text-white transition-colors">Services</Link></li>
+            <li><Link to="/gallery" className="hover:text-white transition-colors">Gallery</Link></li>
+            <li><Link to="/cart" className="hover:text-white transition-colors">Cart</Link></li>
+            <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
           </ul>
         </div>
 
-        <div className="">
-          <h4 className="text-white font-semibold mb-2">Legal</h4>
-          <ul className="space-y-1 text-sm text-gray-300">
-            <li className="hover:text-[#ffffff] cursor-pointer">Privacy Policy</li>
-            <li  className="hover:text-[#ffffff] cursor-pointer text">Terms of Services</li>
+       
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <h4 className="text-white font-bold mb-4 uppercase text-sm tracking-wider">Legal</h4>
+          <ul className="space-y-3 text-sm text-gray-300">
+            <li className="hover:text-white cursor-pointer transition-colors">Privacy Policy</li>
+            <li className="hover:text-white cursor-pointer transition-colors">Terms of Service</li>
           </ul>
         </div>
       </div>
 
-      <div className=" bg-[#ffffff]  text-center text-xs text-[#113a36] py-2  mt-8 ">
-       Copyright © 2025 Shine Luxury Furniture. All Rights Reserved.
+    
+      <div className="bg-white text-center text-[10px] md:text-xs text-[#03344F] py-4 mt-12 font-medium">
+        Copyright © 2026 Shine Luxury Furniture. All Rights Reserved.
       </div>
-  </footer>
+    </footer>
   );
 };
 
