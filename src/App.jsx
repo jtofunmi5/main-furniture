@@ -18,7 +18,7 @@ import VendorDashboard from "./pages/VendorDashboard";
 import VendorProducts from "./pages/VendorProduct";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
-import Gallery from "./pages/gallery";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
