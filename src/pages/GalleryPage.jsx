@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
-import Ourgallery from '../Components/Ourgallery';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import Ourgallery from './Components/Ourgallery';
 
-const Gallery = () => {
+const GalleryPage = () => {
   return (
     <>
     <Navbar/>
@@ -16,4 +16,4 @@ const Gallery = () => {
   )
 };
 
-export default Gallery;
+export default GalleryPage;
